@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shivam Learning | Coding Academy</title>
+
+<!-- Website domain:
+     www.shivamlearning.com
+-->
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#07111f;
+    color:white;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:#0b1628ee;
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 7%;
+    border-bottom:1px solid #ffffff18;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background:
+    radial-gradient(circle at top,#123d61 0,#07111f 50%);
+}
+
+.hero h1{
+    font-size:clamp(45px,8vw,85px);
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    color:#b8c7d9;
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    border-radius:30px;
+    background:#38bdf8;
+    color:#06111d;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 7%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:45px;
+}
+
+.title span{
+    color:#38bdf8;
+}
+
+.courses{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.course{
+    background:#101e32;
+    padding:30px;
+    border-radius:20px;
+    border:1px solid #ffffff12;
+    transition:.3s;
+}
+
+.course:hover{
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+}
+
+.course h3{
+    font-size:25px;
+    margin-bottom:12px;
+}
+
+.course p{
+    color:#aab8ca;
+    line-height:1.6;
+}
+
+.lesson{
+    max-width:1000px;
+    margin:25px auto;
+    background:#0d1b2d;
+    padding:25px;
+    border-radius:18px;
+    border-left:4px solid #38bdf8;
+}
+
+.lesson h3{
+    color:#38bdf8;
+    margin-bottom:12px;
+}
+
+.lesson p{
+    color:#c5d0dc;
+    margin-bottom:12px;
+}
+
+pre{
+    background:#050b14;
+    padding:18px;
+    border-radius:10px;
+    overflow-x:auto;
+    color:#8be9fd;
+    line-height:1.5;
+}
+
+.contact{
+    text-align:center;
+    background:#0b1628;
+}
+
+.contact p{
+    color:#b8c7d9;
+    margin:10px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#8190a3;
+    background:#050b14;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Shivam Learning</div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#learn">Learn</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+
+<section class="hero" id="home">
+
+    <div>
+        <h1>Shivam <span>Learning</span></h1>
+
+        <p>
+            Learn Coding from Basic to Advanced.
+            HTML, Java, Python and C++ —
+            step by step with practical examples.
+        </p>
+
+        <a class="btn" href="#courses">Explore Courses</a>
+    </div>
+
+</section>
+
+
+<section id="courses">
+
+    <h2 class="title">Our <span>Courses</span></h2>
+
+    <div class="courses">
+
+        <div class="course">
+            <h3>🌐 HTML</h3>
+            <p>Website ka structure banana sikhiye.</p>
+        </div>
+
+        <div class="course">
+            <h3>☕ Java</h3>
+            <p>Object Oriented Programming aur Java development.</p>
+        </div>
+
+        <div class="course">
+            <h3>🐍 Python</h3>
+            <p>Programming, automation aur projects.</p>
+        </div>
+
+        <div class="course">
+            <h3>⚡ C++</h3>
+            <p>Programming fundamentals aur problem solving.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="learn">
+
+<h2 class="title">Start <span>Learning</span></h2>
+
+
+<!-- ================= HTML ================= -->
+
+<h2 style="color:#38bdf8;text-align:center;margin:40px;">
+HTML — 20 Topics
+</h2>
+
+<div class="lesson">
+<h3>1. Basic HTML Structure</h3>
+<p>HTML document ka basic structure.</p>
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>2. Heading</h3>
+<p>Heading ke liye h1 se h6 tak tags hote hain.</p>
+<pre>&lt;h1&gt;My Heading&lt;/h1&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>3. Paragraph</h3>
+<pre>&lt;p&gt;This is my paragraph.&lt;/p&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>4. Link</h3>
+<pre>&lt;a href="https://google.com"&gt;Google&lt;/a&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>5. Image</h3>
+<pre>&lt;img src="photo.jpg" alt="Photo"&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>6. Button</h3>
+<pre>&lt;button&gt;Click Me&lt;/button&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>7. Line Break</h3>
+<pre>Hello&lt;br&gt;World</pre>
+</div>
+
+<div class="lesson">
+<h3>8. Bold Text</h3>
+<pre>&lt;b&gt;Important Text&lt;/b&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>9. Italic Text</h3>
+<pre>&lt;i&gt;Hello&lt;/i&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>10. Lists</h3>
+<pre>&lt;ul&gt;
+&lt;li&gt;HTML&lt;/li&gt;
+&lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>11. Ordered List</h3>
+<pre>&lt;ol&gt;
+&lt;li&gt;First&lt;/li&gt;
+&lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>12. Table</h3>
+<pre>&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Shivam&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>13. Form</h3>
+<pre>&lt;form&gt;
+&lt;input type="text"&gt;
+&lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>14. Input</h3>
+<pre>&lt;input type="text" placeholder="Enter Name"&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>15. Video</h3>
+<pre>&lt;video controls&gt;
+&lt;source src="video.mp4"&gt;
+&lt;/video&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>16. Audio</h3>
+<pre>&lt;audio controls&gt;
+&lt;source src="song.mp3"&gt;
+&lt;/audio&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>17. Div</h3>
+<pre>&lt;div&gt;
+    My Content
+&lt;/div&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>18. HTML Comment</h3>
+<pre>&lt;!-- This is a comment --&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>19. ID</h3>
+<pre>&lt;h1 id="title"&gt;Hello&lt;/h1&gt;</pre>
+</div>
+
+<div class="lesson">
+<h3>20. Class</h3>
+<pre>&lt;p class="text"&gt;Hello World&lt;/p&gt;</pre>
+</div>
+
+
+<!-- ================= JAVA ================= -->
+
+<h2 style="color:#38bdf8;text-align:center;margin:70px 40px 40px;">
+Java — 20 Topics
+</h2>
+
+<div class="lesson"><h3>1. Hello World</h3>
+<pre>class Main {
+ public static void main(String[] args) {
+  System.out.println("Hello World");
+ }
+}</pre></div>
+
+<div class="lesson"><h3>2. Variables</h3>
+<pre>int age = 16;</pre></div>
+
+<div class="lesson"><h3>3. String</h3>
+<pre>String name = "Shivam";</pre></div>
+
+<div class="lesson"><h3>4. Input</h3>
+<pre>Scanner sc = new Scanner(System.in);
+int age = sc.nextInt();</pre></div>
+
+<div class="lesson"><h3>5. If Statement</h3>
+<pre>if(age >= 18) {
+ System.out.println("Adult");
+}</pre></div>
+
+<div class="lesson"><h3>6. Else</h3>
+<pre>if(age >= 18)
+ System.out.println("Adult");
+else
+ System.out.println("Minor");</pre></div>
+
+<div class="lesson"><h3>7. For Loop</h3>
+<pre>for(int i=1;i<=5;i++){
+ System.out.println(i);
+}</pre></div>
+
+<div class="lesson"><h3>8. While Loop</h3>
+<pre>while(i <= 5){
+ System.out.println(i);
+ i++;
+}</pre></div>
+
+<div class="lesson"><h3>9. Array</h3>
+<pre>int[] numbers = {10,20,30};</pre></div>
+
+<div class="lesson"><h3>10. Method</h3>
+<pre>static void hello(){
+ System.out.println("Hello");
+}</pre></div>
+
+<div class="lesson"><h3>11. Class</h3>
+<pre>class Student {
+ String name;
+}</pre></div>
+
+<div class="lesson"><h3>12. Object</h3>
+<pre>Student s = new Student();</pre></div>
+
+<div class="lesson"><h3>13. Constructor</h3>
+<pre>Student(){
+ System.out.println("Created");
+}</pre></div>
+
+<div class="lesson"><h3>14. Inheritance</h3>
+<pre>class Dog extends Animal {
+}</pre></div>
+
+<div class="lesson"><h3>15. Encapsulation</h3>
+<pre>private int age;</pre></div>
+
+<div class="lesson"><h3>16. Polymorphism</h3>
+<pre>void show(){
+ System.out.println("Hello");
+}</pre></div>
+
+<div class="lesson"><h3>17. Exception Handling</h3>
+<pre>try {
+ int x = 10 / 0;
+}
+catch(Exception e) {
+ System.out.println("Error");
+}</pre></div>
+
+<div class="lesson"><h3>18. Interface</h3>
+<pre>interface Animal {
+ void sound();
+}</pre></div>
+
+<div class="lesson"><h3>19. ArrayList</h3>
+<pre>ArrayList&lt;String&gt; list =
+new ArrayList&lt;&gt;();</pre></div>
+
+<div class="lesson"><h3>20. Inheritance Example</h3>
+<pre>class Car extends Vehicle {
+}</pre></div>
+
+
+<!-- ================= PYTHON ================= -->
+
+<h2 style="color:#38bdf8;text-align:center;margin:70px 40px 40px;">
+Python — 20 Topics
+</h2>
+
+<div class="lesson"><h3>1. Hello World</h3>
+<pre>print("Hello World")</pre></div>
+
+<div class="lesson"><h3>2. Variable</h3>
+<pre>name = "Shivam"
+age = 16</pre></div>
+
+<div class="lesson"><h3>3. Integer</h3>
+<pre>age = 16</pre></div>
+
+<div class="lesson"><h3>4. String</h3>
+<pre>name = "Shivam"</pre></div>
+
+<div class="lesson"><h3>5. Float</h3>
+<pre>price = 99.5</pre></div>
+
+<div class="lesson"><h3>6. Boolean</h3>
+<pre>is_student = True</pre></div>
+
+<div class="lesson"><h3>7. Input</h3>
+<pre>name = input("Enter name: ")</pre></div>
+
+<div class="lesson"><h3>8. Type Conversion</h3>
+<pre>age = int(input("Age: "))</pre></div>
+
+<div class="lesson"><h3>9. Addition</h3>
+<pre>a = 10
+b = 20
+print(a + b)</pre></div>
+
+<div class="lesson"><h3>10. If</h3>
+<pre>if age >= 18:
+    print("Adult")</pre></div>
+
+<div class="lesson"><h3>11. Else</h3>
+<pre>if age >= 18:
+    print("Adult")
+else:
+    print("Minor")</pre></div>
+
+<div class="lesson"><h3>12. For Loop</h3>
+<pre>for i in range(5):
+    print(i)</pre></div>
+
+<div class="lesson"><h3>13. While Loop</h3>
+<pre>i = 1
+while i <= 5:
+    print(i)
+    i += 1</pre></div>
+
+<div class="lesson"><h3>14. List</h3>
+<pre>names = ["Shivam","Rahul","Aman"]</pre></div>
+
+<div class="lesson"><h3>15. Tuple</h3>
+<pre>numbers = (10,20,30)</pre></div>
+
+<div class="lesson"><h3>16. Dictionary</h3>
+<pre>student = {
+    "name":"Shivam",
+    "age":16
+}</pre></div>
+
+<div class="lesson"><h3>17. Function</h3>
+<pre>def hello():
+    print("Hello")
+
+hello()</pre></div>
+
+<div class="lesson"><h3>18. Class</h3>
+<pre>class Student:
+    pass</pre></div>
+
+<div class="lesson"><h3>19. Exception Handling</h3>
+<pre>try:
+    print(10/0)
+except:
+    print("Error")</pre></div>
+
+<div class="lesson"><h3>20. Module</h3>
+<pre>import math
+
+print(math.sqrt(25))</pre></div>
+
+
+<!-- ================= C++ ================= -->
+
+<h2 style="color:#38bdf8;text-align:center;margin:70px 40px 40px;">
+C++ — 20 Topics
+</h2>
+
+<div class="lesson"><h3>1. Hello World</h3>
+<pre>#include &lt;iostream&gt;
+using namespace std;
+
+int main(){
+ cout &lt;&lt; "Hello World";
+}</pre></div>
+
+<div class="lesson"><h3>2. Variable</h3>
+<pre>int age = 16;</pre></div>
+
+<div class="lesson"><h3>3. String</h3>
+<pre>string name = "Shivam";</pre></div>
+
+<div class="lesson"><h3>4. Input</h3>
+<pre>cin &gt;&gt; age;</pre></div>
+
+<div class="lesson"><h3>5. If</h3>
+<pre>if(age >= 18){
+ cout &lt;&lt; "Adult";
+}</pre></div>
+
+<div class="lesson"><h3>6. Else</h3>
+<pre>if(age >= 18)
+ cout &lt;&lt; "Adult";
+else
+ cout &lt;&lt; "Minor";</pre></div>
+
+<div class="lesson"><h3>7. For Loop</h3>
+<pre>for(int i=1;i&lt;=5;i++){
+ cout &lt;&lt; i;
+}</pre></div>
+
+<div class="lesson"><h3>8. While Loop</h3>
+<pre>int i=1;
+
+while(i&lt;=5){
+ cout &lt;&lt; i;
+ i++;
+}</pre></div>
+
+<div class="lesson"><h3>9. Array</h3>
+<pre>int numbers[3] = {10,20,30};</pre></div>
+
+<div class="lesson"><h3>10. Function</h3>
+<pre>void hello(){
+ cout &lt;&lt; "Hello";
+}</pre></div>
+
+<div class="lesson"><h3>11. Pointer</h3>
+<pre>int x = 10;
+int *p = &amp;x;</pre></div>
+
+<div class="lesson"><h3>12. Reference</h3>
+<pre>int x = 10;
+int &amp;y = x;</pre></div>
+
+<div class="lesson"><h3>13. Class</h3>
+<pre>class Student{
+public:
+ string name;
+};</pre></div>
+
+<div class="lesson"><h3>14. Object</h3>
+<pre>Student s;</pre></div>
+
+<div class="lesson"><h3>15. Constructor</h3>
+<pre>Student(){
+ cout &lt;&lt; "Created";
+}</pre></div>
+
+<div class="lesson"><h3>16. Inheritance</h3>
+<pre>class Dog : public Animal{
+};</pre></div>
+
+<div class="lesson"><h3>17. Encapsulation</h3>
+<pre>class Student{
+private:
+ int age;
+};</pre></div>
+
+<div class="lesson"><h3>18. Vector</h3>
+<pre>vector&lt;int&gt; numbers;
+numbers.push_back(10);</pre></div>
+
+<div class="lesson"><h3>19. String Function</h3>
+<pre>string name = "Shivam";
+cout &lt;&lt; name.length();</pre></div>
+
+<div class="lesson"><h3>20. Switch</h3>
+<pre>switch(choice){
+case 1:
+ cout &lt;&lt; "Java";
+ break;
+}</pre></div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2 class="title">Join <span>Shivam Learning</span></h2>
+
+    <p>Learn. Practice. Build. Become a Developer.</p>
+
+    <p>🌐 www.shivamlearning.com</p>
+
+    <p>📧 Email: shivamlearning@example.com</p>
+  <p>Instagram ID: silent_achiever120
+
+    <p>📱 Contact: +91 9250109294</p>
+
+    <a class="btn" href="mailto:shivamlearning@example.com">
+        Contact Us
+    </a>
+
+</section>
+
+
+<footer>
+    © 2026 Shivam Learning | All Rights Reserved
+</footer>
+
+</body>
+</html>
